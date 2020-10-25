@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1de11b0-c783-4655-a6dd-96a956c09d9b" name="Default Changelist" comment="" />
+    <list default="true" id="fa5a1940-b195-49c5-9c08-aa52961fcfbe" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -13,12 +27,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1gzBBg58JGd851pdwQFdiXaexcH" />
+  <component name="ProjectId" id="1iLampvYrcTanwVpykhgfn7oLHc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,24 +42,34 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/container/erp/tests.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/erp" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\ProyectoWeb\app\core" />
+      <recent name="C:\Projects\ProyectoWeb\app\static\js" />
+      <recent name="C:\Projects\ProyectoWeb\app\static\lib\jquery-confirm-v3.3.4" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\ProyectoWeb\app\core\erp" />
+    </key>
+  </component>
   <component name="RunManager" selected="Django server.server">
-    <configuration name="tests" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\PROYECTO DESARROLLO WEB\ProyectoWeb\env\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/container/erp" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core/erp" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/container/erp/tests.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/erp/tests.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -62,7 +86,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="config.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\PROYECTO DESARROLLO WEB\ProyectoWeb\env\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Projects\ProyectoWeb\env\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -80,7 +104,7 @@
     </configuration>
     <list>
       <item itemvalue="Django server.server" />
-      <item itemvalue="Python.tests" />
+      <item itemvalue="Python.test" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -88,12 +112,18 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b1de11b0-c783-4655-a6dd-96a956c09d9b" name="Default Changelist" comment="" />
-      <created>1599107410193</created>
+      <changelist id="fa5a1940-b195-49c5-9c08-aa52961fcfbe" name="Default Changelist" comment="" />
+      <created>1601689487732</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1599107410193</updated>
-      <workItem from="1599107421753" duration="44039000" />
+      <updated>1601689487732</updated>
+      <workItem from="1601689490330" duration="29809000" />
+      <workItem from="1602337835034" duration="3672000" />
+      <workItem from="1602577167182" duration="652000" />
+      <workItem from="1602751449506" duration="8441000" />
+      <workItem from="1602913789795" duration="10627000" />
+      <workItem from="1603119776560" duration="30731000" />
+      <workItem from="1603353305364" duration="749000" />
     </task>
     <servers />
   </component>
@@ -101,44 +131,48 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="7" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599172980752">
+    <state x="84" y="7" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603120017550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="7" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1599172980752" />
-    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1599125444962">
+    <state x="84" y="7" width="1092" height="721" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1603120017550" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603275534752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599125444962" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1599219717739">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603275534752" />
+    <state x="364" y="129" key="EnvironmentVariablesDialog" timestamp="1603120002504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599219717739" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1599219717739">
+    <state x="364" y="129" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1603120002504" />
+    <state x="462" y="118" key="FileChooserDialogImpl" timestamp="1601698132529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599219717739" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1599219717739">
+    <state x="462" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601698132529" />
+    <state width="1323" height="156" key="GridCell.Tab.0.bottom" timestamp="1603353752306">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599219717739" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1599219717739">
+    <state width="1323" height="156" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603353752306" />
+    <state width="1323" height="156" key="GridCell.Tab.0.center" timestamp="1603353752306">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599219717739" />
-    <state x="184" y="6" key="SettingsEditor" timestamp="1599123375864">
+    <state width="1323" height="156" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603353752306" />
+    <state width="1323" height="156" key="GridCell.Tab.0.left" timestamp="1603353752306">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599123375864" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1599216729937">
+    <state width="1323" height="156" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603353752306" />
+    <state width="1323" height="156" key="GridCell.Tab.0.right" timestamp="1603353752306">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1599216729937" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1599107430624">
+    <state width="1323" height="156" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603353752306" />
+    <state x="43" y="13" key="SettingsEditor" timestamp="1603277415660">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1599107430624" />
+    <state x="43" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1603277415660" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1603353304412">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1603353304412" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/app$tests.coverage" NAME="tests Coverage Results" MODIFIED="1599172683145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/container/erp" />
+    <SUITE FILE_PATH="coverage/app$test.coverage" NAME="test Coverage Results" MODIFIED="1603261134639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/core/erp" />
   </component>
 </project>
