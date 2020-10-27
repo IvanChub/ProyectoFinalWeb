@@ -85,6 +85,19 @@ class Sale(models.Model):
     def __str__(self):
         return self.cli.names
 
+<<<<<<< HEAD
+=======
+    def toJSON(self):
+        item = model_to_dict(self)
+        item['cli'] = self.cli.toJSON()
+        item['subtotal'] = format(self.subtotal, '.2f')
+        item['iva'] = format(self.iva, '.2f')
+        item['total'] = format(self.total, '.2f')
+        item['date_joined'] = self.date_joined.strftime('%Y-%m-%d')
+        item['det'] = [i.toJSON() for i in self.detsale_set.all()]
+        return item
+
+>>>>>>> 95c72df0... Video 61 al 70
     class Meta:
         verbose_name = 'Venta'
         verbose_name_plural = 'Ventas'
@@ -101,6 +114,16 @@ class DetSale(models.Model):
     def __str__(self):
         return self.prod.name
 
+<<<<<<< HEAD
+=======
+    def toJSON(self):
+        item = model_to_dict(self, exclude=['sale'])
+        item['prod'] = self.prod.toJSON()
+        item['price'] = format(self.price, '.2f')
+        item['subtotal'] = format(self.subtotal, '.2f')
+        return item
+
+>>>>>>> 95c72df0... Video 61 al 70
     class Meta:
         verbose_name = 'Detalle de Venta'
         verbose_name_plural = 'Detalle de Ventas'
