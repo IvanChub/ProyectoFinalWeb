@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.http import JsonResponse
-from django.urls import reverse_lazy
-from django.utils.decorators import method_decorator
-from django.views.decorators.csrf import csrf_exempt
-
-from core.erp.forms import SaleForm
-from core.erp.mixins import ValidatePermissionRequiredMixin
-from django.views.generic import CreateView
-
-from core.erp.models import Sale, Product
-=======
 import json
 import os
 
@@ -34,7 +21,7 @@ from core.erp.models import Sale, Product, DetSale
 class SaleListView(LoginRequiredMixin, ValidatePermissionRequiredMixin, ListView):
     model = Sale
     template_name = 'sale/list.html'
-    permission_required = 'erp.view_sale'
+    permission_required = 'view_sale'
 
     @method_decorator(csrf_exempt)
     def dispatch(self, request, *args, **kwargs):
@@ -65,19 +52,14 @@ class SaleListView(LoginRequiredMixin, ValidatePermissionRequiredMixin, ListView
         context['list_url'] = reverse_lazy('erp:sale_list')
         context['entity'] = 'Ventas'
         return context
->>>>>>> 95c72df0... Video 61 al 70
 
 
 class SaleCreateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, CreateView):
     model = Sale
     form_class = SaleForm
     template_name = 'sale/create.html'
-<<<<<<< HEAD
-    success_url = reverse_lazy('index')
-=======
     success_url = reverse_lazy('erp:sale_list')
->>>>>>> 95c72df0... Video 61 al 70
-    permission_required = 'erp.add_sale'
+    permission_required = 'add_sale'
     url_redirect = success_url
 
     @method_decorator(csrf_exempt)
@@ -93,10 +75,6 @@ class SaleCreateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, Create
                 prods = Product.objects.filter(name__icontains=request.POST['term'])[0:10]
                 for i in prods:
                     item = i.toJSON()
-<<<<<<< HEAD
-                    item['value'] = i.name
-                    data.append(item)
-=======
                     # item['value'] = i.name
                     item['text'] = i.name
                     data.append(item)
@@ -119,7 +97,6 @@ class SaleCreateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, Create
                         det.subtotal = float(i['subtotal'])
                         det.save()
                     data = {'id': sale.id}
->>>>>>> 95c72df0... Video 61 al 70
             else:
                 data['error'] = 'No ha ingresado a ninguna opción'
         except Exception as e:
@@ -132,9 +109,6 @@ class SaleCreateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, Create
         context['entity'] = 'Ventas'
         context['list_url'] = self.success_url
         context['action'] = 'add'
-<<<<<<< HEAD
-        return context
-=======
         context['det'] = []
         return context
 
@@ -144,7 +118,7 @@ class SaleUpdateView(LoginRequiredMixin, ValidatePermissionRequiredMixin, Update
     form_class = SaleForm
     template_name = 'sale/create.html'
     success_url = reverse_lazy('erp:sale_list')
-    permission_required = 'erp.change_sale'
+    permission_required = 'change_sale'
     url_redirect = success_url
 
     @method_decorator(csrf_exempt)
@@ -214,7 +188,7 @@ class SaleDeleteView(LoginRequiredMixin, ValidatePermissionRequiredMixin, Delete
     model = Sale
     template_name = 'sale/delete.html'
     success_url = reverse_lazy('erp:sale_list')
-    permission_required = 'erp.delete_sale'
+    permission_required = 'delete_sale'
     url_redirect = success_url
 
     def dispatch(self, request, *args, **kwargs):
@@ -284,4 +258,3 @@ class SaleInvoicePdfView(View):
         except:
             pass
         return HttpResponseRedirect(reverse_lazy('erp:sale_list'))
->>>>>>> 95c72df0... Video 61 al 70

@@ -42,11 +42,7 @@ function submit_with_ajax(url, title, content, parameters, callback) {
                     }).done(function (data) {
                         console.log(data);
                         if (!data.hasOwnProperty('error')) {
-<<<<<<< HEAD
-                            callback();
-=======
                             callback(data);
->>>>>>> 95c72df0... Video 61 al 70
                             return false;
                         }
                         message_error(data.error);
@@ -66,8 +62,6 @@ function submit_with_ajax(url, title, content, parameters, callback) {
             },
         }
     })
-<<<<<<< HEAD
-=======
 }
 
 function alert_action(title, content, callback, cancel) {
@@ -98,5 +92,4 @@ function alert_action(title, content, callback, cancel) {
             },
         }
     })
->>>>>>> 95c72df0... Video 61 al 70
 }

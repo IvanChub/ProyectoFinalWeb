@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 var tblProducts;
->>>>>>> 95c72df0... Video 61 al 70
 var vents = {
     items: {
         cli: '',
@@ -15,14 +12,9 @@ var vents = {
         var subtotal = 0.00;
         var iva = $('input[name="iva"]').val();
         $.each(this.items.products, function (pos, dict) {
-<<<<<<< HEAD
-            dict.subtotal = dict.cant * parseFloat(dict.pvp);
-            subtotal+=dict.subtotal;
-=======
             dict.pos = pos;
             dict.subtotal = dict.cant * parseFloat(dict.pvp);
             subtotal += dict.subtotal;
->>>>>>> 95c72df0... Video 61 al 70
         });
         this.items.subtotal = subtotal;
         this.items.iva = this.items.subtotal * iva;
@@ -38,12 +30,7 @@ var vents = {
     },
     list: function () {
         this.calculate_invoice();
-<<<<<<< HEAD
-
-        $('#tblProducts').DataTable({
-=======
         tblProducts = $('#tblProducts').DataTable({
->>>>>>> 95c72df0... Video 61 al 70
             responsive: true,
             autoWidth: false,
             destroy: true,
@@ -62,11 +49,7 @@ var vents = {
                     class: 'text-center',
                     orderable: false,
                     render: function (data, type, row) {
-<<<<<<< HEAD
-                        return '<a rel="remove" class="btn btn-danger btn-xs btn-flat"><i class="fas fa-trash-alt"></i></a>';
-=======
                         return '<a rel="remove" class="btn btn-danger btn-xs btn-flat" style="color: white;"><i class="fas fa-trash-alt"></i></a>';
->>>>>>> 95c72df0... Video 61 al 70
                     }
                 },
                 {
@@ -82,11 +65,7 @@ var vents = {
                     class: 'text-center',
                     orderable: false,
                     render: function (data, type, row) {
-<<<<<<< HEAD
-                        return '<input type="text" name="cant" class="form-control form-control-sm" autocomplete="off" value="' + row.cant + '">';
-=======
                         return '<input type="text" name="cant" class="form-control form-control-sm input-sm" autocomplete="off" value="' + row.cant + '">';
->>>>>>> 95c72df0... Video 61 al 70
                     }
                 },
                 {
@@ -98,8 +77,6 @@ var vents = {
                     }
                 },
             ],
-<<<<<<< HEAD
-=======
             rowCallback(row, data, displayNum, displayIndex, dataIndex) {
 
                 $(row).find('input[name="cant"]').TouchSpin({
@@ -109,17 +86,10 @@ var vents = {
                 });
 
             },
->>>>>>> 95c72df0... Video 61 al 70
             initComplete: function (settings, json) {
 
             }
         });
-<<<<<<< HEAD
-    },
-};
-
-$(function () {
-=======
         console.clear();
         console.log(this.items);
     },
@@ -152,7 +122,6 @@ function formatRepo(repo) {
 
 $(function () {
 
->>>>>>> 95c72df0... Video 61 al 70
     $('.select2').select2({
         theme: "bootstrap4",
         language: 'es'
@@ -176,19 +145,11 @@ $(function () {
     }).on('change', function () {
         vents.calculate_invoice();
     })
-<<<<<<< HEAD
-    .val(0.12);
-
-    // search products
-
-    $('input[name="search"]').autocomplete({
-=======
         .val(0.12);
 
     // search products
 
     /*$('input[name="search"]').autocomplete({
->>>>>>> 95c72df0... Video 61 al 70
         source: function (request, response) {
             $.ajax({
                 url: window.location.pathname,
@@ -217,10 +178,6 @@ $(function () {
             vents.add(ui.item);
             $(this).val('');
         }
-<<<<<<< HEAD
-    });
-});
-=======
     });*/
 
     $('.btnRemoveAll').on('click', function () {
@@ -320,4 +277,3 @@ $(function () {
     vents.list();
 });
 
->>>>>>> 95c72df0... Video 61 al 70
